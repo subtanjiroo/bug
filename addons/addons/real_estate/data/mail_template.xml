@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="offer_mail_template" model="mail.template">
+            <field name="name">Property Information</field>
+            <field name="email_from">test@qa.team</field>
+            <field name="email_to">deadshoflife366@gmail.com</field>
+            <field name="model_id" ref="real_estate.model_estate_property"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="subject">New Information On {{object.name}}</field>
+            <field name="body_html" type="html">
+                <p>
+                    Dear Bidders,
+                    <br/>
+                    This Property is now sold
+                    <br/>
+                     Regards,
+                    <br/>
+                    The minh
+                </p>
+               
+            </field>
+        </record>
+    </data>
+</odoo>
