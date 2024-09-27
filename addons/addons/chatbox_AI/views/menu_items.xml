@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<odoo>
-    <menuitem id="menu_root_chatbox" name="Chat Box AI" web_icon="real_estate/static/description/icon.png">
-        <menuitem id="chatbox_ai" name="Chatbox AI" action="chatbox_AI.action_chatbox_ai"/>
-    </menuitem>
-</odoo>
