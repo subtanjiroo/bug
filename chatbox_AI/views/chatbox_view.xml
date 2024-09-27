@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="chatbox_view" model="ir.ui.view">
+        <field name="name">chatbox.ai.form</field>
+        <field name="model">chatbox.ai</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <!-- Sử dụng field mà bạn đã tạo -->
+                        <field name="name" widget="custom_char" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_chatbox_ai" model="ir.actions.act_window">
+        <field name="name">Chat Box</field>
+        <field name="res_model">chatbox.ai</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="chatbox_view"/>
+        <field name="target">current</field>
+    </record>
+</odoo>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_root_chatbox" action="chatbox_AI.action_chatbox_ai" name="Chat Box AI">
+    </menuitem>
+</odoo>

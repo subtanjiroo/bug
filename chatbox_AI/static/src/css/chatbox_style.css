@@ -1,0 +1,60 @@
+#chatbox {
+    background-color: #f0f8ff; /* Màu nền nhạt cho chatbox */
+    border: 1px solid #dcdcdc; /* Đường viền */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 90vw!important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+#message_input {
+    width: calc(100% - 22px); /* Độ rộng trường nhập */
+    padding: 10px; /* Padding cho trường nhập */
+}
+
+#send_button {
+    background-color: rgb(113,99,158); /* Màu nền cho nút gửi */
+    color: white; /* Màu chữ */
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+
+}
+
+#messages {
+    min-height: 300px; /* Chiều cao cho vùng hiển thị tin nhắn */
+    overflow-y: scroll; /* Cuộn dọc */
+    margin-bottom: 10px; /* Khoảng cách dưới vùng tin nhắn */
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo hàng dọc */
+    max-height: 300px; /* Đặt chiều cao tối đa */
+    overflow-y: auto;  /* Hiển thị thanh cuộn dọc */
+    padding: 10px;     /* Khoảng cách bên trong */
+    border: 1px solid #ccc; /* Thêm viền cho khu vực chứa tin nhắn */
+}
+.server_message{
+    padding: 10px 15px; /* Khoảng cách bên trong cho mỗi tin nhắn */
+    background-color: rgb(113,99,158);
+    border: 1px black solid;
+    border-radius: 20px;
+    color: white;
+    max-width: 80%; /* Chiều rộng tối đa cho mỗi tin nhắn */
+    word-wrap: break-word; /* Ngắt dòng cho tin nhắn dài */
+    align-self: flex-start; /* Căn lề phải cho tin nhắn gửi */
+}
+.client_message{
+    padding: 10px 15px; /* Khoảng cách bên trong cho mỗi tin nhắn */
+    background-color: rgb(234, 3, 255);
+    border: 1px black solid;
+    border-radius: 20px;
+    color: white;
+    max-width: 80%; /* Chiều rộng tối đa cho mỗi tin nhắn */
+    word-wrap: break-word; /* Ngắt dòng cho tin nhắn dài */
+    align-self: flex-end; /* Căn lề trái cho tin nhắn nhận */
+}
+
